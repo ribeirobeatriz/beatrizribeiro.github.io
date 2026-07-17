@@ -1,0 +1,248 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --line: #ddd;
+  --accent: #96503a; /* darker coral / brown; change freely */
+  --bg: #fdfdfc;
+  --max-width: 920px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 64px 24px 48px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ---- intro row: photo column (+ buttons) | name/info/bio column ---- */
+
+.intro-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.photo-col {
+  flex-shrink: 0;
+  width: 190px;
+}
+
+.profile-photo {
+  display: block;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #eee;
+  margin-bottom: 14px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bio-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.bio-col h1 {
+  margin: 0 0 4px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.affiliation {
+  margin: 2px 0 10px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.contact-line {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+}
+
+.bio p {
+  margin: 0 0 14px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 7px 16px;
+  font-size: 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.88;
+  border-bottom: 1px solid var(--accent);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+}
+
+.social {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.social a {
+  margin-right: 12px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 40px 0;
+}
+
+section.research, section.teaching {
+  margin-top: 44px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+}
+
+.paper {
+  margin-bottom: 26px;
+}
+
+.paper-title {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.coauthor-noLink {
+  color: var(--accent);
+}
+
+.coauthors {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.paper-ref {
+  display: block;
+  margin-top: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: #555;
+}
+
+.tag-jmp {
+  display: block;
+  margin-top: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.abstract-toggle {
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.abstract-toggle:hover {
+  text-decoration: underline;
+}
+
+.abstract {
+  font-size: 0.95rem;
+  color: var(--text);
+  display: none;
+  margin: 8px 0 0;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.abstract.open {
+  display: block;
+}
+
+.teaching-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 14px;
+}
+
+.teaching ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.teaching li {
+  margin-bottom: 8px;
+  font-size: 0.96rem;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  .container { padding: 40px 18px 32px; }
+  .intro-row { flex-direction: column; align-items: center; text-align: center; }
+  .photo-col { margin-bottom: 16px; }
+}
