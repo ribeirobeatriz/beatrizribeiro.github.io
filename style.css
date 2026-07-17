@@ -125,9 +125,10 @@ a:hover {
 
 .bio p {
   margin: 0 0 14px;
+  font-size: 15.7px;
   text-align: justify;
   text-justify: inter-word;
-  hyphens: auto;
+  hyphens: none;
 }
 
 .social {
@@ -244,7 +245,7 @@ h2 {
   margin: 8px 0 0;
   text-align: justify;
   text-justify: inter-word;
-  hyphens: auto;
+  hyphens: none;
 }
 
 .abstract.open {
