@@ -24,10 +24,9 @@ Drop a photo into `images/profile.jpg` (square, at least 280×280px works well).
 
 ## Host your CV
 
-Right now the "Download CV" button links to your existing CV at
-`https://ribeirobeatriz.github.io/website_sep25/CV/CV_Jan26.pdf`. To host it
-from this repo instead, put the PDF in a `cv/` folder here and update the
-link in `index.html`.
+Your CV is hosted from this repo at `cv/CV_Jul26.pdf`, linked from the
+"Download CV" button in `index.html`. To update it, replace that file (and
+update the filename in `index.html` if you rename it).
 
 ## Publish with GitHub Pages
 

@@ -188,6 +188,17 @@ h2 {
   color: var(--accent);
 }
 
+.paper-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.paper-links a {
+  font-size: 0.88rem;
+}
+
 .abstract-toggle {
   font-family: inherit;
   font-size: 0.88rem;
@@ -196,7 +207,7 @@ h2 {
   border: none;
   padding: 0;
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .abstract-toggle:hover {
