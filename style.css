@@ -21,7 +21,7 @@ body {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 24px 24px 48px;
+  padding: 44px 24px 48px;
 }
 
 a {
