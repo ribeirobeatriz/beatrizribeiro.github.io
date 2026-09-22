@@ -95,6 +95,16 @@ a:hover {
   min-width: 0;
 }
 
+.name-email {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.name-email a {
+  color: var(--muted);
+}
+
 .bio-col h1 {
   margin: 0 0 4px;
   font-size: 2rem;
@@ -195,6 +205,10 @@ h2 {
 .title-link:hover {
   color: var(--accent);
   border-bottom-color: var(--accent);
+}
+
+.paper-ref.italic-note {
+  font-style: italic;
 }
 
 .paper-ref {
