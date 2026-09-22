@@ -132,6 +132,11 @@ a:hover {
   hyphens: none;
 }
 
+.jmp-notice {
+  font-weight: 700;
+  color: var(--accent);
+}
+
 .social {
   font-size: 0.9rem;
   color: var(--muted);
