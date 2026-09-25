@@ -95,10 +95,20 @@ a:hover {
   min-width: 0;
 }
 
+.name-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 2px;
+  margin: 0 0 4px;
+}
+
 .name-email {
   font-size: 0.9rem;
   font-weight: 400;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 .name-email a {
@@ -106,7 +116,7 @@ a:hover {
 }
 
 .bio-col h1 {
-  margin: 0 0 4px;
+  margin: 0;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -309,4 +319,6 @@ footer {
   .container { padding: 40px 18px 32px; }
   .intro-row { flex-direction: column; align-items: center; text-align: center; }
   .photo-col { margin-bottom: 16px; }
+  .name-row { justify-content: center; }
+  .name-email { font-size: 0.78rem; }
 }
