@@ -264,8 +264,8 @@ h2 {
 
 .link-pending {
   font-size: 0.88rem;
-  font-style: italic;
-  color: var(--muted);
+  color: #999;
+  cursor: default;
 }
 
 .abstract-toggle {
