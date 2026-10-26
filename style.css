@@ -262,6 +262,12 @@ h2 {
   font-size: 0.88rem;
 }
 
+.link-pending {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
 .abstract-toggle {
   font-family: inherit;
   font-size: 0.88rem;
